@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <title>IPHONE STORE</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    
+    <header> NEW ERA OF IPHONE
+        <div id="cart">
+            <img src="cart.png" style="width: 15%"></img>
+        </div>
+    </header>
+        <div id="myModal" class="modal item-order">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="title">SHOPPING CART</div>
+            </div>
+        </div>
+   
+
+</head>
+<body>
+        
+
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="neweraiphone.jpg" style="width:100%">
+  <img class="mySlides" src="neweraiphone2.jpg" style="width:100%">
+  <img class="mySlides" src="neweraiphone3.jpg" style="width:100%">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+<script>
+  var slideIndex = 1;
+  showDivs(slideIndex);
+  
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+  
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    x[slideIndex-1].style.display = "block";  
+  }
+  </script>
+
+    <!-- <div class="productcontent"> -->
+     <div class="container">
+        <!-- <div class="card">
+            <img src="iphone6s.jpg" class="phone-image" alt="Iphone" style="width: 80%" style="height:85%">
+           <div class="title">Iphone 6s+</div> 
+            <h4><span>CAPACITY 16GB, NO CARD SLOT</span></h4>
+            <p class="price">P12,200.00</p>
+            <button  class="Button" onclick="addToCart">ORDER</button>
+        </div>
+        <div class="card">
+            <img src="iphone7.jpg" class="phone-image" alt="Iphone" style="width: 75%" style="height:80%">
+            <div class="title">Iphone 7+</div>
+            <h4>CAPACITY: 32GB, NO CARD SLOT</h4>
+            <p class="price">17,737.00</p>
+            <button  class="Button" onclick="addToCart">ORDER</button>
+        </div>
+        <div class="card">
+            <img src="iphone8.jpg" class="phone-image" alt="Iphone" style="width: 70%" style="height: 75%">
+            <div class="title">Iphone 8+</div>
+            <h4>CAPACITY: 64GB, NO CARD SLOT</h4>
+            <p class="price">P22,000.00</p>
+            <button  class="Button" onclick="addToCart">ORDER</button>
+        </div>
+        <div class="card">
+            <img src="iphonex.jpg" class="phone-image" alt="Iphone" style="width: 70%" style="height:80%">
+            <div class="title">Iphone X</div>
+            <h4>CAPACITY: 64GB, NO CARD SLOT</h4>
+            <p class="price">P24,990.00</p>
+            <button  class="Button" onclick="addToCart">ORDER</button>
+        </div>
+        <div class="card">
+            <img src="iphone11.jpg" class="phone-image" alt="Iphone" style="width: 80%" style=" height:85%">
+            <div class="title">Iphone 11</div>
+            <h4>CAPACITY: 64GB, NO CARD SLOT</h4>
+            <p class="price">P36,000.00</p>
+            <button  class="Button" onclick="addToCart">ORDER</button>
+        </div>
+        <div class="card">
+            <img src="iphone12.jpg" class="phone-image" alt="Iphone" style="width: 70%" style=" height:70%">
+            <div class="title">Iphone 12 pro</div>
+            <h4>CAPACITY: 128GB, NO CARD SLOT</h4>
+            <p class="price">P57,635.00</p>
+            <button  class="Button" onclick="addToCart">ORDER</button>
+        </div>       
+        <div class="card">
+            <img src="ipadpro.jpg" class="phone-image" alt="Iphone" style="width: 75%" style=" height:75%">
+            <div class="title">Ipad pro</div>
+            <h4>CAPACITY: 128GB, NO CARD SLOT</h4>
+            <p class="price">P52,314.00</p>
+            <button  class="Button" onclick="addToCart">ORDER</button>
+        </div>
+        <div class="card">
+            <img src="ipad4thgen.jpg" class="phone-image" alt="Iphone" style="width: 80%" style=" height:85%">
+            <div class="title">Ipad 4th gen</div>
+            <h4>CAPACITY: 32GB, NO CARD SLOT</h44>
+            <p class="price">30,160.00</p>
+            <button class="Button" onclick="addToCart">ORDER</button>
+     </div> -->
+    <!-- </div> -->
+        <div class="container" id="iphoneProduct"></div>
+            <script type="text/javascript" src="script.js"></script> 
+</body>
+</html>
